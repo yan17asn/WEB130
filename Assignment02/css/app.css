@@ -1,0 +1,27 @@
+@media screen and (max-width: 39.99em) {
+  article {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  article {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 64em) {
+  article {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 39.99em) {
+  img {
+    width: 100%;
+  }
+}
+
+.titleImage {
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */

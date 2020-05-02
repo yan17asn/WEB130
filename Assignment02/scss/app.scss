@@ -1,0 +1,24 @@
+@import 'size';
+
+article{
+    @include size(small){
+        column-count: 1;
+    }
+    @include size(medium){
+        column-count: 2;
+    }
+    @include size(big){
+        column-count:3;
+    }
+}
+
+img{
+    @include size(small){
+        width:100%;
+    }
+}
+
+.titleImage{
+    text-align: center;
+}
+
