@@ -43,10 +43,18 @@ nav {
             text-align: center;
             @include size(lg) {
                 text-align: left;
+                &:hover {
+                    background-color: $dark-blue;
+                }
             }
             text-decoration: none;
             color: white;
             padding: 20px;
+            @include size(md) {
+                &:hover {
+                    background-color: $dark-blue;
+                }
+            }    
         }
         .menu-icon {
             display: block;
