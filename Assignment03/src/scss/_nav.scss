@@ -16,7 +16,6 @@ nav {
         @include size(sm) {
             flex-direction: column;
         }
-
         //ul.submenu
         &.submenu {
             @include size(md) {
@@ -24,7 +23,6 @@ nav {
                 width: 100%;
                 left: 0;
             }
-
             @include size(lg) {
                 position: absolute;
                 flex-direction: column;
@@ -34,9 +32,25 @@ nav {
     li {
         position: relative;
         display: block;
+        @include size(lg) {
+            .nav-border{
+                border-right: 2px solid $color;
+            } 
+        }
         @include size(md) {
             position: static;
             flex-grow: 1;
+            .nav-border{
+                border-right: 2px solid $color;
+            }
+            .subnav-border{
+                border-top: 2px solid $color;
+            } 
+        }
+        @include size(sm) {
+            .phone-border{
+                border-top: 2px solid $color;
+            }
         }
         a {
             display: block;
@@ -49,7 +63,7 @@ nav {
             }
             text-decoration: none;
             color: white;
-            padding: 20px;
+            padding: 15px;
             @include size(md) {
                 &:hover {
                     background-color: $dark-blue;
@@ -69,6 +83,6 @@ nav {
                 height: 27px;
                 background-image: url("/img/X-Icon.png");
             }
-        }     
+        }        
     }    
 }
